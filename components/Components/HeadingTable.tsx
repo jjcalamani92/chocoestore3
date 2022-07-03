@@ -27,7 +27,7 @@ export const HeadingTable: FC<Props> = ({ category, section, item, name, title, 
               href
                 ?
                 <Link href={`${href}`}>
-                  <a className="transition duration-150 ease-in-out hover:bg-red-600 focus:outline-none border bg-red-500 rounded text-white px-8 
+                  <a className="transition duration-150 ease-in-out hover:bg-rose-600 focus:outline-none border bg-rose-500 rounded text-white px-8 
             py-2 text-md sm:text-sm">
                     <div className="hidden sm:flex">
                       Crear

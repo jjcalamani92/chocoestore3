@@ -1,4 +1,4 @@
-export interface IClothing {
+export interface IGlasses {
 	_id: string;
 	name: string;
 	brand: string;
@@ -17,8 +17,10 @@ export interface IClothing {
 	site: string;
 	featured: string;
 	
-	color: string;
-	sizes: string[];
+	glasses: string;
+	form: string;
+	bridge: string;
+	rod: string;
 }
 export interface IMark {
 	_id: string;

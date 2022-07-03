@@ -89,7 +89,7 @@ export const FormSection: FC<Props> = ({ section, category }) => {
                           Nombre
                         </label>
                         <input
-                          className="my-2 focus:ring-red-500 focus:border-red-500 block w-full shadow-sm text-xs lg:text-sm  rounded-md p-1 border border-gray-300"
+                          className="my-2 focus:ring-rose-500 focus:border-rose-500 block w-full shadow-sm text-xs lg:text-sm  rounded-md p-1 border border-gray-300"
                           type={"text"}
                           {...register('name', {
                             onChange: (e) => { },
@@ -99,7 +99,7 @@ export const FormSection: FC<Props> = ({ section, category }) => {
                           })}
                         />
                         <div>
-                          {errors.name && <span className="text-xs lg:text-sm text-red-500">{errors.name.message}</span>}
+                          {errors.name && <span className="text-xs lg:text-sm text-rose-500">{errors.name.message}</span>}
                         </div>
                       </div>
                       <div>
@@ -109,7 +109,7 @@ export const FormSection: FC<Props> = ({ section, category }) => {
                         <div className="mt-1">
                           <textarea
                             rows={4}
-                            className="shadow-sm focus:ring-red-500 focus:border-red-500 my-2 block w-full text-xs lg:text-sm border border-gray-300 rounded-md p-1"
+                            className="shadow-sm focus:ring-rose-500 focus:border-rose-500 my-2 block w-full text-xs lg:text-sm border border-gray-300 rounded-md p-1"
                             {...register('description', {
                               required: 'Este campo es requerido',
                               minLength: { value: 2, message: 'Mínimo 3 caracteres' }
@@ -117,7 +117,7 @@ export const FormSection: FC<Props> = ({ section, category }) => {
                           />
                         </div>
                         <div>
-                          {errors.description && <span className="text-xs lg:text-sm text-red-500">{errors.description.message}</span>}
+                          {errors.description && <span className="text-xs lg:text-sm text-rose-500">{errors.description.message}</span>}
                         </div>
                       </div>
 
@@ -128,7 +128,7 @@ export const FormSection: FC<Props> = ({ section, category }) => {
                         <div className="mt-1">
                           <textarea
                             rows={4}
-                            className="shadow-sm focus:ring-red-500 focus:border-red-500 my-2 block w-full text-xs lg:text-sm border border-gray-300 rounded-md p-1"
+                            className="shadow-sm focus:ring-rose-500 focus:border-rose-500 my-2 block w-full text-xs lg:text-sm border border-gray-300 rounded-md p-1"
                             {...register('imageAlt', {
                               required: 'Este campo es requerido',
                               minLength: { value: 2, message: 'Mínimo 3 caracteres' }
@@ -136,7 +136,7 @@ export const FormSection: FC<Props> = ({ section, category }) => {
                           />
                         </div>
                         <div>
-                          {errors.imageAlt && <span className="text-xs lg:text-sm text-red-500">{errors.imageAlt.message}</span>}
+                          {errors.imageAlt && <span className="text-xs lg:text-sm text-rose-500">{errors.imageAlt.message}</span>}
                         </div>
                       </div>
 
@@ -165,7 +165,7 @@ export const FormSection: FC<Props> = ({ section, category }) => {
                             <div className="flex flex-col text-xs lg:text-sm text-gray-600">
                               <label
                                 htmlFor="file-upload"
-                                className="relative cursor-pointer bg-white rounded-md font-medium text-red-500 hover:text-red-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-red-500"
+                                className="relative cursor-pointer bg-white rounded-md font-medium text-rose-500 hover:text-rose-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-rose-500"
                               >
                                 <span>Cargar un archivo</span>
                                 <input id="file-upload" name="file-upload" accept="image/png, image/gif, image/jpeg, image/webp" type="file" className="sr-only" onChange={onFileSelected} />
@@ -192,7 +192,7 @@ export const FormSection: FC<Props> = ({ section, category }) => {
                   <div className=" bg-white text-right mt-3">
                     <button
                       type="submit"
-                      className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-xs lg:text-sm font-medium rounded-md text-white bg-red-500 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                      className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-xs lg:text-sm font-medium rounded-md text-white bg-rose-500 hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500"
                     >
                       {
                         section._id ? `Actualizar` : `Crear`

@@ -89,7 +89,7 @@ export const FormSite: FC<Props> = ({ site }) => {
                           Nombre
                         </label>
                         <input
-                          className="my-2 focus:ring-red-500 focus:border-red-500 block w-full shadow-sm text-xs lg:text-sm  rounded-md p-1 border border-gray-300"
+                          className="my-2 focus:ring-rose-500 focus:border-rose-500 block w-full shadow-sm text-xs lg:text-sm  rounded-md p-1 border border-gray-300"
                           type={"text"}
                           {...register('title', {
                             onChange: (e) => { },
@@ -99,7 +99,7 @@ export const FormSite: FC<Props> = ({ site }) => {
                           })}
                         />
                         <div>
-                          {errors.title && <span className="text-xs lg:text-sm text-red-500">{errors.title.message}</span>}
+                          {errors.title && <span className="text-xs lg:text-sm text-rose-500">{errors.title.message}</span>}
                         </div>
                       </div>
                       <div>
@@ -107,7 +107,7 @@ export const FormSite: FC<Props> = ({ site }) => {
                           Dirección
                         </label>
                         <input
-                          className="my-2 focus:ring-red-500 focus:border-red-500 block w-full shadow-sm text-xs lg:text-sm rounded-md p-1 border border-gray-300"
+                          className="my-2 focus:ring-rose-500 focus:border-rose-500 block w-full shadow-sm text-xs lg:text-sm rounded-md p-1 border border-gray-300"
                           type={"text"}
                           {...register('address', {
                             onChange: (e) => { },
@@ -117,7 +117,7 @@ export const FormSite: FC<Props> = ({ site }) => {
                           })}
                         />
                         <div>
-                          {errors.address && <span className="text-xs lg:text-sm text-red-500">{errors.address.message}</span>}
+                          {errors.address && <span className="text-xs lg:text-sm text-rose-500">{errors.address.message}</span>}
                         </div>
                       </div>
                       <div className="grid grid-cols-1 gap 0 lg:grid-cols-2 lg:gap-3">
@@ -126,14 +126,14 @@ export const FormSite: FC<Props> = ({ site }) => {
                             Dominio
                           </label>
                           <input
-                            className="my-2 focus:ring-red-500 focus:border-red-500 block w-full shadow-sm text-xs lg:text-sm rounded-md p-1 border border-gray-300"
+                            className="my-2 focus:ring-rose-500 focus:border-rose-500 block w-full shadow-sm text-xs lg:text-sm rounded-md p-1 border border-gray-300"
                             {...register('domain', {
                               required: 'Este campo es requerido',
                               minLength: { value: 2, message: 'Mínimo 2 caracteres' }
                             })}
                           />
                           <div>
-                            {errors.domain && <span className="text-xs lg:text-sm text-red-500">{errors.domain.message}</span>}
+                            {errors.domain && <span className="text-xs lg:text-sm text-rose-500">{errors.domain.message}</span>}
                           </div>
                         </div>
                         <div className="">
@@ -141,7 +141,7 @@ export const FormSite: FC<Props> = ({ site }) => {
                             Teléfono:
                           </label>
                           <input
-                            className="my-2 focus:ring-red-500 focus:border-red-500 block w-full shadow-sm text-xs lg:text-sm rounded-md p-1 border border-gray-300"
+                            className="my-2 focus:ring-rose-500 focus:border-rose-500 block w-full shadow-sm text-xs lg:text-sm rounded-md p-1 border border-gray-300"
                             type='number'
                             {...register('numberPhone', {
                               required: 'Este campo es requerido',
@@ -149,7 +149,7 @@ export const FormSite: FC<Props> = ({ site }) => {
                             })}
                           />
                           <div>
-                            {errors.numberPhone && <span className="text-xs lg:text-sm text-red-500">{errors.numberPhone.message}</span>}
+                            {errors.numberPhone && <span className="text-xs lg:text-sm text-rose-500">{errors.numberPhone.message}</span>}
                           </div>
                         </div>
                       </div>
@@ -161,7 +161,7 @@ export const FormSite: FC<Props> = ({ site }) => {
                         <div className="mt-1">
                           <textarea
                             rows={4}
-                            className="shadow-sm focus:ring-red-500 focus:border-red-500 my-2 block w-full text-xs lg:text-sm border border-gray-300 rounded-md p-1"
+                            className="shadow-sm focus:ring-rose-500 focus:border-rose-500 my-2 block w-full text-xs lg:text-sm border border-gray-300 rounded-md p-1"
                             {...register('description', {
                               required: 'Este campo es requerido',
                               minLength: { value: 2, message: 'Mínimo 3 caracteres' }
@@ -169,7 +169,7 @@ export const FormSite: FC<Props> = ({ site }) => {
                           />
                         </div>
                         <div>
-                          {errors.description && <span className="text-xs lg:text-sm text-red-500">{errors.description.message}</span>}
+                          {errors.description && <span className="text-xs lg:text-sm text-rose-500">{errors.description.message}</span>}
                         </div>
                       </div>
                       
@@ -180,7 +180,7 @@ export const FormSite: FC<Props> = ({ site }) => {
                         <div className="mt-1">
                           <textarea
                             rows={4}
-                            className="shadow-sm focus:ring-red-500 focus:border-red-500 my-2 block w-full text-xs lg:text-sm border border-gray-300 rounded-md p-1"
+                            className="shadow-sm focus:ring-rose-500 focus:border-rose-500 my-2 block w-full text-xs lg:text-sm border border-gray-300 rounded-md p-1"
                             {...register('location', {
                               required: 'Este campo es requerido',
                               minLength: { value: 2, message: 'Mínimo 3 caracteres' }
@@ -188,7 +188,7 @@ export const FormSite: FC<Props> = ({ site }) => {
                           />
                         </div>
                         <div>
-                          {errors.location && <span className="text-xs lg:text-sm text-red-500">{errors.location.message}</span>}
+                          {errors.location && <span className="text-xs lg:text-sm text-rose-500">{errors.location.message}</span>}
                         </div>
                       </div>
 
@@ -215,7 +215,7 @@ export const FormSite: FC<Props> = ({ site }) => {
                           <div className="flex text-xs lg:text-sm text-gray-600">
                             <label
                               htmlFor="file-upload"
-                              className="relative cursor-pointer bg-white rounded-md font-medium text-red-500 hover:text-red-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-red-500"
+                              className="relative cursor-pointer bg-white rounded-md font-medium text-rose-500 hover:text-rose-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-rose-500"
                             >
                               <span>Cargar un archivo</span>
                               <input id="file-upload" name="file-upload" accept="image/png, image/gif, image/jpeg, image/webp" type="file" className="sr-only" onChange={onFileSelected} />
@@ -247,7 +247,7 @@ export const FormSite: FC<Props> = ({ site }) => {
                   <div className=" bg-white text-right mt-3">
                     <button
                       type="submit"
-                      className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-xs lg:text-sm font-medium rounded-md text-white bg-red-500 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                      className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-xs lg:text-sm font-medium rounded-md text-white bg-rose-500 hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500"
                     >
                       Actualizar
                     </button>

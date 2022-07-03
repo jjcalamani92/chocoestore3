@@ -2,7 +2,7 @@ import { useRouter } from "next/router"
 import { FC } from "react"
 import { Category, Item, Section } from "../../src/interfaces"
 import { CardComponent } from "./CardProduct"
-import { IClothing } from '../../src/interfaces/Clothing';
+import { IGlasses } from '../../src/interfaces/Glasses';
 import { CardPages } from "./CardPages";
 
 interface GridPages {
@@ -11,7 +11,7 @@ interface GridPages {
   categories?: Category[]
   items?: Item[]
   category?: string
-  product?: IClothing[]
+  product?: IGlasses[]
 }
 
 export const GridPages: FC<GridPages> = ({sections, category, data, product}) => {
@@ -37,7 +37,7 @@ export const GridPages: FC<GridPages> = ({sections, category, data, product}) =>
                       imageAlt={fact.name} 
                       description={fact.description} 
                       width={500}
-                      height={600} 
+                      height={500} 
                       objectFit='cover'
                       href={`/detalles/${fact.slug}`}
                       price={fact.price}
@@ -56,7 +56,7 @@ export const GridPages: FC<GridPages> = ({sections, category, data, product}) =>
                   imageAlt={fact.imageAlt} 
                   description={fact.description} 
                   width={500}
-                  height={600} 
+                  height={500} 
                   objectFit='cover'
                   href={
                     router.query.section ? `/${router.query.category}/${router.query.section}/${fact.href}` 
@@ -78,7 +78,7 @@ export const GridPages: FC<GridPages> = ({sections, category, data, product}) =>
                   imageAlt={fact.imageAlt} 
                   description={fact.description} 
                   width={500}
-                  height={600} 
+                  height={500} 
                   objectFit='cover'
                   href={
                     router.query.section ? `/${router.query.category}/${router.query.section}/${fact.href}` 
@@ -99,7 +99,7 @@ export const GridPages: FC<GridPages> = ({sections, category, data, product}) =>
                       imageSrc={fact.image[0]} 
                       imageAlt={fact.name} 
                       width={500}
-                      height={600} 
+                      height={500} 
                       objectFit='cover'
                       href={`/admin/products/${fact.slug}`}
                     />
@@ -116,7 +116,7 @@ export const GridPages: FC<GridPages> = ({sections, category, data, product}) =>
                   imageAlt={fact.imageAlt} 
                   description={fact.description} 
                   width={500}
-                  height={600} 
+                  height={500} 
                   objectFit='cover'
                   href={
                     router.query.section ? `/${router.query.category}/${router.query.section}/${fact.href}` 

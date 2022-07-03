@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { FC, useContext, useState, } from "react";
 import { UiContext } from "../../src/context";
-import { IClothing } from "../../src/interfaces";
+import { IGlasses } from "../../src/interfaces";
 import { SwiperDetail } from "./Swiper";
 import { useRouter } from 'next/router';
 import { RadioGroup } from '@headlessui/react';
@@ -13,12 +13,12 @@ function classNames(...classes: string[]) {
 }
 
 interface Props {
-	product: IClothing;
+	product: IGlasses;
 }
 
 export const ProductOverviews: FC<Props> = ({ product }) => {
 	const { site } = useContext(UiContext)
-  const [selectedSize, setSelectedSize] = useState(product.sizes[2])
+  // const [selectedSize, setSelectedSize] = useState(product.sizes[2])
 	const router = useRouter()
 	return (
 		<>
@@ -50,14 +50,14 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 						<div className="mb-4">
 						<form >
 							<div className="mt-6">
-                <div className="flex items-center justify-between">
+                {/* <div className="flex items-center justify-between">
                   <h3 className="text-sm text-gray-900 font-medium">Tallas</h3>
-                  <a href="#" className="text-sm font-medium text-red-600 hover:text-red-500">
+                  <a href="#" className="text-sm font-medium text-rose-600 hover:text-rose-500">
                     Guia de tallas
                   </a>
-                </div>
+                </div> */}
 
-                <RadioGroup value={selectedSize} onChange={setSelectedSize} className="mt-4">
+                {/* <RadioGroup value={selectedSize} onChange={setSelectedSize} className="mt-4">
                   <RadioGroup.Label className="sr-only">Choose a size</RadioGroup.Label>
                   <div className="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4">
                     {product.sizes.map((size, i) => (
@@ -71,7 +71,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
                             // size.inStock
                               ? 'bg-white shadow-sm text-gray-900 cursor-pointer'
                               : 'bg-gray-50 text-gray-200 cursor-not-allowed',
-                            active ? 'ring-2 ring-red-500' : '',
+                            active ? 'ring-2 ring-rose-500' : '',
                             'group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6'
                           )
                         }
@@ -83,7 +83,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
                               <span
                                 className={classNames(
                                   active ? 'border' : 'border-2',
-                                  checked ? 'border-red-500' : 'border-transparent',
+                                  checked ? 'border-rose-500' : 'border-transparent',
                                   'absolute -inset-px rounded-md pointer-events-none'
                                 )}
                                 aria-hidden="true"
@@ -102,17 +102,17 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
                                   <line x1={0} y1={100} x2={100} y2={0} vectorEffect="non-scaling-stroke" />
                                 </svg>
                               </span>
-                            )} */}
+                            )} 
                           </>
                         )}
                       </RadioGroup.Option>
                     ))}
                   </div>
-                </RadioGroup>
+                </RadioGroup> */}
               </div>
 								{/* <button
 									type="submit"
-									className="mt-10 w-full bg-red-500 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400"
+									className="mt-10 w-full bg-rose-500 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-400"
 								>
 									Agregar al carrito
 								</button> */}
@@ -120,7 +120,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 							{/* <form className="mt-5">
 								<button
 									type="submit"
-									className="mt-4 w-full bg-red-500 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400"
+									className="mt-4 w-full bg-rose-500 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-400"
 								>
 									Agregar al carrito
 								</button>
@@ -128,7 +128,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 							<a
 								href={`https://wa.me/591${site.numberPhone}?text=Hola%20me%20interesa%20este%20producto:%20https://${site.domain}/detalles/${product.slug}`}
 								target={'blank'}
-								className="mt-3 w-full bg-red-500 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400"
+								className="mt-3 w-full bg-rose-500 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-400"
 							>
 								Preguntar por WhatsApp
 							</a>
@@ -141,12 +141,12 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 						</div>
 						<div className="mb-4">
 							<h2 className="text-sm font-medium text-gray-900 mb-4">Compartir</h2>
-							<div className="grid grid-cols-7 gap-2 text-red-500 ">
+							<div className="grid grid-cols-7 gap-2 text-rose-500 ">
 
 								<Link href={`https://www.facebook.com/sharer.php?u=https://${site.domain}${router.asPath}`}>
 									<a target={'_blank'}>
 										<FontAwesomeIcon
-											className="w-6 h-6 hover:text-red-600"
+											className="w-6 h-6 hover:text-rose-600"
 											icon={faFacebookF}
 										/>
 									</a>
@@ -154,7 +154,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 								<Link href={'#'}>
 									<a target={'_blank'}>
 										<FontAwesomeIcon
-											className="w-6 h-6 hover:text-red-600"
+											className="w-6 h-6 hover:text-rose-600"
 											icon={faInstagram}
 										/>
 									</a>
@@ -162,7 +162,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 								<Link href={'#'}>
 									<a target={'_blank'}>
 										<FontAwesomeIcon
-											className="w-6 h-6 hover:text-red-600"
+											className="w-6 h-6 hover:text-rose-600"
 											icon={faTwitter}
 										/>
 									</a>
@@ -170,7 +170,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 								<Link href={'#'}>
 									<a target={'_blank'}>
 										<FontAwesomeIcon
-											className="w-6 h-6 hover:text-red-600"
+											className="w-6 h-6 hover:text-rose-600"
 											icon={faLinkedin}
 										/>
 									</a>
@@ -178,7 +178,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 								<Link href={'#'}>
 									<a target={'_blank'}>
 										<FontAwesomeIcon
-											className="w-6 h-6 hover:text-red-600"
+											className="w-6 h-6 hover:text-rose-600"
 											icon={faPinterest}
 										/>
 									</a>
@@ -186,7 +186,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 								<Link href={'#'}>
 									<a target={'_blank'}>
 										<FontAwesomeIcon
-											className="w-6 h-6 hover:text-red-600"
+											className="w-6 h-6 hover:text-rose-600"
 											icon={faWhatsapp}
 										/>
 									</a>
@@ -194,7 +194,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 								<Link href={'#'}>
 									<a target={'_blank'}>
 										<FontAwesomeIcon
-											className="w-6 h-6 hover:text-red-600"
+											className="w-6 h-6 hover:text-rose-600"
 											icon={faTelegram}
 										/>
 									</a>

@@ -26,10 +26,10 @@ const AdminPage = () => {
 			// imageFullUrl={site.logo}
 		>
 				<HeadingTable title='Productos' href="/admin/products/new"/>
-				<TableProduct products={data.clothingsAll} />
-				{/* <GridProduct product={data.clothingsAll}/> */}
-				<LayoutItemListAdmin products={data.clothingsAll}/>
-				<Pagination01 setPage={setPage} page={page} length={data.clothingsAll.length} all={PAGE_SIZE} />
+				<TableProduct products={data.glassessAll} />
+				{/* <GridProduct product={data.glassessAll}/> */}
+				<LayoutItemListAdmin products={data.glassessAll}/>
+				<Pagination01 setPage={setPage} page={page} length={data.glassessAll.length} all={PAGE_SIZE} />
 			{/* <LayoutAdmin>
 				{/* <Pagination  /> */}
 			{/* </LayoutAdmin> */} 

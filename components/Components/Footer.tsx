@@ -86,12 +86,12 @@ export const Footer = () => {
                 </li>
                 <li className="mb-6">
                   <h2 className="text-xs lg:text-sm font-medium text-gray-900 mb-4">RRSS</h2>
-                  <div className="grid grid-cols-5 gap-2 text-red-500 ">
+                  <div className="grid grid-cols-5 gap-2 text-rose-500 ">
 
                     <Link href={`https://www.facebook.com`}>
                       <a target={'_blank'}>
                         <FontAwesomeIcon
-                          className="w-6 h-6 hover:text-red-600"
+                          className="w-6 h-6 hover:text-rose-600"
                           icon={faFacebookF}
                         />
                       </a>
@@ -99,7 +99,7 @@ export const Footer = () => {
                     <Link href={'#'}>
                       <a target={'_blank'}>
                         <FontAwesomeIcon
-                          className="w-6 h-6 hover:text-red-600"
+                          className="w-6 h-6 hover:text-rose-600"
                           icon={faInstagram}
                         />
                       </a>
@@ -107,7 +107,7 @@ export const Footer = () => {
                     <Link href={'#'}>
                       <a target={'_blank'}>
                         <FontAwesomeIcon
-                          className="w-6 h-6 hover:text-red-600"
+                          className="w-6 h-6 hover:text-rose-600"
                           icon={faTwitter}
                         />
                       </a>
@@ -116,7 +116,7 @@ export const Footer = () => {
                     <Link href={'#'}>
                       <a target={'_blank'}>
                         <FontAwesomeIcon
-                          className="w-6 h-6 hover:text-red-600"
+                          className="w-6 h-6 hover:text-rose-600"
                           icon={faWhatsapp}
                         />
                       </a>
@@ -124,7 +124,7 @@ export const Footer = () => {
                     <Link href={'#'}>
                       <a target={'_blank'}>
                         <FontAwesomeIcon
-                          className="w-6 h-6 hover:text-red-600"
+                          className="w-6 h-6 hover:text-rose-600"
                           icon={faTelegram}
                         />
                       </a>

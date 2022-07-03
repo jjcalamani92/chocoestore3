@@ -2,7 +2,7 @@ import { useRouter } from "next/router"
 import { FC } from "react"
 import { Category, Item, Section, Featured } from "../../src/interfaces"
 import { CardComponent } from "./CardProduct"
-import { IClothing } from '../../src/interfaces/Clothing';
+import { IGlasses } from '../../src/interfaces/Glasses';
 import { CardPages } from "./CardPages";
 
 interface GridProduct {
@@ -11,7 +11,7 @@ interface GridProduct {
   categories?: Category[]
   items?: Item[]
   category?: string
-  product?: IClothing[]
+  product?: IGlasses[]
 }
 
 export const GridFeatured: FC<GridProduct> = ({ sections, category, data, product }) => {
@@ -32,7 +32,7 @@ export const GridFeatured: FC<GridProduct> = ({ sections, category, data, produc
                 imageAlt={fact.imageAlt}
                 description={fact.description}
                 width={500}
-                height={600}
+                height={500}
                 objectFit='cover'
                 href={`promociones/${fact.href}`}
               />

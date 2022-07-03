@@ -1,5 +1,5 @@
 import { NextPage, GetServerSideProps } from 'next';
-import { IClothing, IMark } from "../../../src/interfaces";
+import { IGlasses, IMark } from "../../../src/interfaces";
 import { GraphQLClient } from 'graphql-request';
 import { Layout, LayoutAdmin } from '../../../components/Layout';
 import { MARK_BY_HREF } from '../../../src/gql/mark';
@@ -39,7 +39,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   //   PRODUCT_BY_SLUG, { slug: query.slug, site: process.env.API_SITE }
   // );
 	// console.log(query.href)
-	// let product:IClothing | null | any;
+	// let product:IGlasses | null | any;
 	if (href === 'new') {
 		mark = {
 			name: '',

@@ -2,14 +2,14 @@ import Image from "next/image";
 import { useRouter } from 'next/router';
 import Link from "next/link";
 import React, { FC, useState } from "react";
-import { IClothing } from "../../../src/interfaces";
+import { IGlasses } from "../../../src/interfaces";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenToSquare, faCircleMinus } from '@fortawesome/free-solid-svg-icons';
 import axios from "axios";
 import Swal from "sweetalert2";
 
 interface Props {
-  products: IClothing[];
+  products: IGlasses[];
 }
 
 
@@ -43,7 +43,7 @@ export const TableProduct: FC<Props> = ({ products }) => {
 					}),
 				// await axios.put(`${process.env.APIS_URL}/api/site/removecategory/${process.env.API_SITE}`, {category: id})
 				// await axios.put(`${process.env.APIS_URL}/api/site/removesection/${process.env.API_SITE}`, data)
-        await axios.delete(`${process.env.APIP_URL}/api/clothing/${id}`)
+        await axios.delete(`${process.env.APIP_URL}/api/glasses/${id}`)
 				router.reload()
 			}
 		})

@@ -46,7 +46,7 @@ export const CardPages: FC<CardPages> = ({ name, imageSrc, imageAlt, description
 						timer: 1000,
 						showConfirmButton: false,
 					}),
-				// await axios.delete(`${process.env.APIP_URL}/api/clothing/${id}`)
+				// await axios.delete(`${process.env.APIP_URL}/api/glasses/${id}`)
 				// router.reload()
         console.log('producto')
 			} 
@@ -113,7 +113,7 @@ export const CardPages: FC<CardPages> = ({ name, imageSrc, imageAlt, description
       {
             p[0] === 'admin'
               ?
-              <div onClick={() => onDeleteData(`${id}`)}  className="mt-2 transition text-center duration-150 ease-in-out hover:bg-red-600 focus:outline-none border bg-white border-1 border-red-500 rounded px-8 py-2 text-xs lg:text-sm text-red-600  hover:text-white hover:border-0">Eliminar</div>
+              <div onClick={() => onDeleteData(`${id}`)}  className="mt-2 transition text-center duration-150 ease-in-out hover:bg-rose-600 focus:outline-none border bg-white border-1 border-rose-500 rounded px-8 py-2 text-xs lg:text-sm text-rose-600  hover:text-white hover:border-0">Eliminar</div>
 							
               : null
           }

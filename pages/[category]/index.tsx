@@ -77,7 +77,7 @@ export default CategoryPage;
 
 // import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 
-// import { IClothing, } from "../../src/interfaces";
+// import { IGlasses, } from "../../src/interfaces";
 // import { CATEGORY } from "../../src/gql/query";
 // import { client } from "../../src/apollo";
 // import { Category} from '../../src/interfaces/Site';
@@ -135,15 +135,15 @@ export default CategoryPage;
 // 	// console.log(JSON.stringify(datas, undefined, 2))
 // 	// const {site} = await graphQLClientS.request(SBS, {id: process.env.API_SITE})
 // 	// console.log(JSON.stringify(site, undefined, 2))
-//   const { clothingAll } = await graphQLClientP.request(CATEGORY, { site: `${process.env.API_SITE}`})
-// 	// console.log(JSON.stringify(clothingAll, undefined, 2 ));
-// 	// console.log(clothingAll)
+//   const { glassesAll } = await graphQLClientP.request(CATEGORY, { site: `${process.env.API_SITE}`})
+// 	// console.log(JSON.stringify(glassesAll, undefined, 2 ));
+// 	// console.log(glassesAll)
 // 	// const { data } = await client.query({
 // 	// 	query: CATEGORY,
 //   //   variables: { site: `${process.env.API_SITE}`},
 // 	// });
 // 	// console.log(data)
-// 	const paths = clothingAll.map((data:IClothing) => ({
+// 	const paths = glassesAll.map((data:IGlasses) => ({
 //     params: { category: data.category}
 //   }))
 // 	return {
