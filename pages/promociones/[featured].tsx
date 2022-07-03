@@ -63,7 +63,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       feature: re, 
       products: glassesByFeatured
     },
-    revalidate: 86400000
+    revalidate: 3
   };
 };
 
