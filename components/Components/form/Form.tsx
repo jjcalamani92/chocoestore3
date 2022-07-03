@@ -408,7 +408,7 @@ export const Form: FC<Props> = ({ product }) => {
                         </label>
                         <input
                           className="mt-1 focus:ring-rose-500 focus:border-rose-500 block w-full shadow-sm text-xs lg:text-sm border border-gray-300 rounded-md  py-2 px-3"
-                          type='number'
+                          type='number' min="0"
                           {...register('inStock', {
                             required: 'Este campo es requerido',
                             min: { value: 0, message: 'Mínimo de valor cero' }
@@ -424,7 +424,7 @@ export const Form: FC<Props> = ({ product }) => {
                         </label>
                         <input
                           className="mt-1 focus:ring-rose-500 focus:border-rose-500 block w-full shadow-sm text-xs lg:text-sm border border-gray-300 rounded-md  py-2 px-3"
-                          type='number'
+                          type='number' min="0"
                           {...register('price', {
                             required: 'Este campo es requerido',
                             min: { value: 0, message: 'Mínimo de valor cero' }
@@ -442,6 +442,8 @@ export const Form: FC<Props> = ({ product }) => {
                         <input
                           type='number'
                           className="mt-1 focus:ring-rose-500 focus:border-rose-500 block w-full shadow-sm text-xs lg:text-sm border border-gray-300 rounded-md  py-2 px-3"
+                          min="0"
+                          step="1"
                           {...register('oldPrice', {
                             required: 'Este campo es requerido',
                             min: { value: 0, message: 'Mínimo de valor cero' }
