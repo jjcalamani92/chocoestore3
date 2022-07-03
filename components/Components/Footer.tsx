@@ -18,7 +18,7 @@ export const Footer = () => {
             >
               <ul>
                 {site.categories.map((category, i) => (
-                  <li key={i} className="mb-3">
+                  <li key={i} className="mb-6">
 
                     <Link href={`/${category.href}`}>
                       <a className="text-xs md:text-sm font-medium leading-none hover:text-brand  text-gray-800 ">{category.name}</a>
@@ -32,7 +32,7 @@ export const Footer = () => {
                 {site.categories.map((category, i) => (
                   category.sections.map((section, i) => (
 
-                    <li key={i} className="mb-3">
+                    <li key={i} className="mb-6">
 
                       <Link href={`/${category.href}/${section.href}`}>
                         <a className="text-xs md:text-sm  font-medium leading-none hover:text-brand  text-gray-800 ">{section.name}</a>
