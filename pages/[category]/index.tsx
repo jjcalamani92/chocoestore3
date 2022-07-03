@@ -63,7 +63,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       },
 			featured: pat,
 		},
-		revalidate: 86400000
+		revalidate: 3
 	};
 };
 export default CategoryPage;
