@@ -72,62 +72,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       },
 
     },
-    revalidate: 10
+    revalidate: 86400000
   }
 };
 export default SlugPage;
-
-// import { GetStaticPaths, GetStaticProps, NextPage } from "next";
-// import { useQuery } from "@apollo/client";
-// import { IGlasses } from "../../src/interfaces";
-// import { CLOTHINGS, PRODUCT_BY_SLUG } from "../../src/gql/query";
-// import { client } from "../../src/apollo";
-// import { Spinner01, ProductOverviews05 } from "../../components/Components";
-// import { Layout } from "../../components/Layout";
-// import Heading01 from "../../components/Components/Heading01";
-// import { ISeo } from '../../src/interfaces/Site';
-
-// interface SlugPage {
-// 	slug: string;
-// }
-
-// const SlugPage: NextPage<SlugPage> = ({ slug }) => {
-// 	const { loading, error, data } = useQuery(PRODUCT_BY_SLUG, {
-// 		variables: { slug: `${slug}`, site: process.env.API_SITE }
-// 	});
-// 	if (loading) return <Spinner01 />;
-// 	return (
-// 		<Layout
-// 			title={"- Detalles"}
-// 			pageDescription={"Detalles de los productos"}
-// 		>
-//       <Heading01 category={`${data.glassesBySlug.category}`} section={`${data.glassesBySlug.section}`} item={`${data.glassesBySlug.item}`} name={`${data.glassesBySlug.name}`}/>
-// 			<ProductOverviews05 product={data.glassesBySlug} />
-// 		</Layout>
-// 	);
-// };
-
-
-// export const getStaticPaths: GetStaticPaths = async (ctx) => {
-// 	const { data } = await client.query({
-// 		query: CLOTHINGS
-// 	});
-// 	const paths = data.glassess.map((data: IGlasses) => ({
-// 		params: { slug: data.slug }
-// 	}));
-// 	return {
-// 		paths,
-// 		fallback: "blocking"
-// 	};
-// };
-// export const getStaticProps: GetStaticProps = async ({ params }) => {
-// 	const { slug = "" } = params as { slug: string };
-// 	return {
-// 		props: {
-// 			slug
-//     },
-//     revalidate: 60 * 60 * 24
-//   }
-// };
-// export default SlugPage;
-
