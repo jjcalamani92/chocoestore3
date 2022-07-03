@@ -83,7 +83,7 @@ export const Header = () => {
                       </div>
                       <Tab.Panels as={Fragment}>
                         {site.categories.map((category) => (
-                          <Tab.Panel key={category.name} className="pt-5 pb-8 px-4 space-y-5">
+                          <Tab.Panel key={category.name} className="pt-5 pb-8 px-4">
                             <div className="grid grid-cols-2 gap-x-4">
                               {category.featured.slice(-2).map((featured) => (
                                 <Link href={`/promociones/${featured.href}`} key={featured.name} className="group text-xs md:text-sm">
@@ -111,7 +111,7 @@ export const Header = () => {
                             </div>
                             <div className="grid grid-cols-2 gap-x-4">
                             {category.sections.map((section, i) => (
-                              <div key={i} className="mt-3">
+                              <div key={i} className="mt-6">
                                 <Link href={`/${category.href}/${section.href}`}>
                                   <a className="text-xs md:text-sm font-medium text-gray-900 capitalize">
                                     {section.name}
@@ -119,7 +119,7 @@ export const Header = () => {
                                 </Link>
                                 <ul
                                   role="list"
-                                  className="mt-3 flex flex-col space-y-6 capitalize"
+                                  className="mt-4 flex flex-col space-y-5 capitalize"
                                 >
                                   {section.items.slice(0,4).map((item, i) => (
                                     <li key={i} className="flow-root">
