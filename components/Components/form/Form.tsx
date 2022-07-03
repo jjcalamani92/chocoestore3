@@ -625,7 +625,7 @@ export const Form: FC<Props> = ({ product }) => {
                                 className="relative cursor-pointer bg-white rounded-md font-medium text-rose-500 hover:text-rose-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-rose-500"
                               >
                                 <span>Cargar un archivo</span>
-                                <input id="file-upload" name="file-upload" accept="image/png, image/gif, image/jpeg, image/webp" type="file" className="sr-only" onChange={onFileSelected} />
+                                <input id="file-upload" name="file-upload" accept="image/png, image/gif, image/jpeg, image/webp" type="file" multiple className="sr-only" onChange={onFileSelected} />
                               </label>
                               <p className="pl-1">o arrastrar y soltar</p>
                             </div>
