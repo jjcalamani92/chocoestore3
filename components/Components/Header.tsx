@@ -315,7 +315,7 @@ export const Header = () => {
                 <a className='flex items-center'>
                   {/* <span className="sr-only">Workflow</span> */}
                   <Image
-                    width={60}
+                    width={65}
                     height={40}
                     src={site.logo}
                     objectFit={'contain'}
