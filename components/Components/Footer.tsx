@@ -18,7 +18,7 @@ export const Footer = () => {
             >
               <ul>
                 {site.categories.map((category, i) => (
-                  <li key={i} className="mb-6">
+                  <li key={i} className="py-3">
 
                     <Link href={`/${category.href}`}>
                       <a className="text-xs md:text-sm font-medium leading-none hover:text-brand  text-gray-800 ">{category.name}</a>
@@ -32,7 +32,7 @@ export const Footer = () => {
                 {site.categories.map((category, i) => (
                   category.sections.map((section, i) => (
 
-                    <li key={i} className="mb-6">
+                    <li key={i} className="py-3">
 
                       <Link href={`/${category.href}/${section.href}`}>
                         <a className="text-xs md:text-sm  font-medium leading-none hover:text-brand  text-gray-800 ">{section.name}</a>
@@ -74,17 +74,17 @@ export const Footer = () => {
 
               </ul>
               <ul>
-                <li className="mb-6">
+                <li className="py-3">
                   <Link href="/contacto">
                     <a className="text-xs md:text-sm  font-medium leading-none hover:text-brand  text-gray-800 ">Contacto</a>
                   </Link>
                 </li>
-                <li className="mb-6">
+                <li className="py-3">
                   <Link href="#">
                     <a className="text-xs md:text-sm  font-medium leading-none hover:text-brand  text-gray-800 ">Preguntas Frecuentes</a>
                   </Link>
                 </li>
-                <li className="mb-6">
+                <li className="py-3">
                   <h2 className="text-xs md:text-sm font-medium text-gray-900 mb-4">RRSS</h2>
                   <div className="grid grid-cols-5 gap-2 text-rose-500 ">
 
