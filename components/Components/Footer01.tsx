@@ -29,7 +29,7 @@ export const Footer01 = () => {
                                         {site.categories.map((category,i) => (
                                             <li key={i} className="mb-6">
                                                 <Link href={`/${category.href}`}>
-                                                    <a className="text-xs lg:text-sm leading-none hover:text-brand  text-gray-800 ">{category.name}
+                                                    <a className="text-xs md:text-sm leading-none hover:text-brand  text-gray-800 ">{category.name}
                                                     </a>
                                                 </Link>
                                             </li>
@@ -44,18 +44,18 @@ export const Footer01 = () => {
                                     <ul>
                                         <li>
                                             <Link href="/contacto">
-                                                <a className="text-xs lg:text-sm leading-none hover:text-brand  text-gray-800 ">Contacto</a>
+                                                <a className="text-xs md:text-sm leading-none hover:text-brand  text-gray-800 ">Contacto</a>
                                             </Link>
                                         </li>
 
                                         {/* <li className="mt-6">
                                             <Link href="#">
-                                                <a className="text-xs lg:text-sm leading-none hover:text-brand  text-gray-800 ">Blog</a>
+                                                <a className="text-xs md:text-sm leading-none hover:text-brand  text-gray-800 ">Blog</a>
                                             </Link>
                                         </li> */}
                                         <li className="mt-6">
                                             <Link href="#">
-                                                <a className="text-xs lg:text-sm leading-none hover:text-brand  text-gray-800 ">FAQs</a>
+                                                <a className="text-xs md:text-sm leading-none hover:text-brand  text-gray-800 ">FAQs</a>
                                             </Link>
                                         </li>
 
@@ -66,13 +66,13 @@ export const Footer01 = () => {
                                 <div className="w-full lg:w-1/2 px-6">
                                     <ul>
                                         <li>
-                                            <a href="#" className="text-xs lg:text-sm leading-none hover:text-brand  text-gray-800 ">
+                                            <a href="#" className="text-xs md:text-sm leading-none hover:text-brand  text-gray-800 ">
                                                 Politicas de Privacidad
                                             </a>
                                         </li>
                                         <li className="mt-6">
                                             <Link href="#">
-                                                <a className="text-xs lg:text-sm leading-none hover:text-brand  text-gray-800 ">Términos de Servicio</a>
+                                                <a className="text-xs md:text-sm leading-none hover:text-brand  text-gray-800 ">Términos de Servicio</a>
                                             </Link>
                                         </li>
                                     </ul>
@@ -112,7 +112,7 @@ export const Footer01 = () => {
                             />
                         </a>
                     </Link>
-                    <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 ">2022 {site.title}. Todos los derechos reservados.</p>
+                    <p className="mt-6 text-xs md:text-sm leading-none text-gray-900 ">2022 {site.title}. Todos los derechos reservados.</p>
                 </div>
             </footer>
         </div>

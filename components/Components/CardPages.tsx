@@ -91,14 +91,14 @@ export const CardPages: FC<CardPages> = ({ name, imageSrc, imageAlt, description
               objectFit={objectFit}
             />
           </div>
-          <h3 className={`mt-1 text-xs lg:text-sm ${p[0] === 'admin' ? " text-gray-700" : "  font-semibold text-gray-900"}`}>
+          <h3 className={`mt-1 text-xs md:text-sm ${p[0] === 'admin' ? " text-gray-700" : "  font-semibold text-gray-900"}`}>
             {name}
 
           </h3>
           {
             price
               ?
-              <p className="mt-1 text-xs lg:text-sm  text-gray-500">{price}.00 Bs</p>
+              <p className="mt-1 text-xs md:text-sm  text-gray-500">{price}.00 Bs</p>
               : null
           }
           {
@@ -106,14 +106,14 @@ export const CardPages: FC<CardPages> = ({ name, imageSrc, imageAlt, description
             ?
             null
             : 
-            <p className="mt-1 text-xs lg:text-sm  text-gray-500">{description}</p>
+            <p className="mt-1 text-xs md:text-sm  text-gray-500">{description}</p>
           }
         </a>
       </Link>
       {
             p[0] === 'admin'
               ?
-              <div onClick={() => onDeleteData(`${id}`)}  className="mt-2 transition text-center duration-150 ease-in-out hover:bg-rose-600 focus:outline-none border bg-white border-1 border-rose-500 rounded px-8 py-2 text-xs lg:text-sm text-rose-600  hover:text-white hover:border-0">Eliminar</div>
+              <div onClick={() => onDeleteData(`${id}`)}  className="mt-2 transition text-center duration-150 ease-in-out hover:bg-rose-600 focus:outline-none border bg-white border-1 border-rose-500 rounded px-8 py-2 text-xs md:text-sm text-rose-600  hover:text-white hover:border-0">Eliminar</div>
 							
               : null
           }

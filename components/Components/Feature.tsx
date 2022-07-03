@@ -6,7 +6,7 @@ export const Feature = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-6 gap-y-0">
             <div className="col-span-1">
               <h1 className="text-4xl font-semibold leading-9 text-gray-800">Nuestras Promociones</h1>
-              <p className="text-xs lg:text-sm leading-6 mt-4 text-gray-600">Hazte con la ropa que quieres desde hace tiempo con las rebajas para hombre de ASOS. Desde zapatos hasta camisas, nuestras rebajas tienen los mejores looks para todo el año. No importa cuál sea tu estilo, en las rebajas de ropa de hombre de ASOS encontrarás lo que buscas. Completa tu look con nuestras rebajas de zapatos para hombre, con marcas como Nike y adidas Originals. </p>
+              <p className="text-xs md:text-sm leading-6 mt-4 text-gray-600">Hazte con la ropa que quieres desde hace tiempo con las rebajas para hombre de ASOS. Desde zapatos hasta camisas, nuestras rebajas tienen los mejores looks para todo el año. No importa cuál sea tu estilo, en las rebajas de ropa de hombre de ASOS encontrarás lo que buscas. Completa tu look con nuestras rebajas de zapatos para hombre, con marcas como Nike y adidas Originals. </p>
               <button aria-label="view catalogue" className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none my-6 md:mt-8 text-base font-semibold leading-none text-gray-800 flex items-center hover:underline">
                 Ver Categorias
                 <svg className="ml-2 mt-1" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">

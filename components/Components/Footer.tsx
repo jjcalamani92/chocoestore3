@@ -21,7 +21,7 @@ export const Footer = () => {
                   <li key={i} className="mb-3">
 
                     <Link href={`/${category.href}`}>
-                      <a className="text-xs lg:text-sm font-medium leading-none hover:text-brand  text-gray-800 ">{category.name}</a>
+                      <a className="text-xs md:text-sm font-medium leading-none hover:text-brand  text-gray-800 ">{category.name}</a>
                     </Link>
                   </li>
                 ))
@@ -35,7 +35,7 @@ export const Footer = () => {
                     <li key={i} className="mb-3">
 
                       <Link href={`/${category.href}/${section.href}`}>
-                        <a className="text-xs lg:text-sm  font-medium leading-none hover:text-brand  text-gray-800 ">{section.name}</a>
+                        <a className="text-xs md:text-sm  font-medium leading-none hover:text-brand  text-gray-800 ">{section.name}</a>
                       </Link>
                     </li>
                   ))
@@ -43,31 +43,31 @@ export const Footer = () => {
                 }
               </ul>
               <ul>
-                <li className="text-xs lg:text-sm leading-none hover:text-brand  text-gray-800 font-medium py-3">
+                <li className="text-xs md:text-sm leading-none hover:text-brand  text-gray-800 font-medium py-3">
                   Lunes:
                   <span className="ml-2 font-normal">08:00 am - 16:00 pm</span>
                 </li>
-                <li className="text-xs lg:text-sm leading-none hover:text-brand  text-gray-800 font-medium py-3">
+                <li className="text-xs md:text-sm leading-none hover:text-brand  text-gray-800 font-medium py-3">
                   Martes:
                   <span className="ml-2 font-normal">08:00 am - 16:00 pm</span>
                 </li>
-                <li className="text-xs lg:text-sm leading-none hover:text-brand  text-gray-800 font-medium py-3">
+                <li className="text-xs md:text-sm leading-none hover:text-brand  text-gray-800 font-medium py-3">
                   Miercoles:
                   <span className="ml-2 font-normal">08:00 am - 16:00 pm</span>
                 </li>
-                <li className="text-xs lg:text-sm leading-none hover:text-brand  text-gray-800 font-medium py-3">
+                <li className="text-xs md:text-sm leading-none hover:text-brand  text-gray-800 font-medium py-3">
                   Jueves:
                   <span className="ml-2 font-normal">08:00 am - 16:00 pm</span>
                 </li>
-                <li className="text-xs lg:text-sm leading-none hover:text-brand  text-gray-800 font-medium py-3">
+                <li className="text-xs md:text-sm leading-none hover:text-brand  text-gray-800 font-medium py-3">
                   Viernes:
                   <span className="ml-2 font-normal">08:00 am - 16:00 pm</span>
                 </li>
-                <li className="text-xs lg:text-sm leading-none hover:text-brand  text-gray-800 font-medium py-3">
+                <li className="text-xs md:text-sm leading-none hover:text-brand  text-gray-800 font-medium py-3">
                   Sabado:
                   <span className="ml-2 font-normal">08:00 am - 16:00 pm</span>
                 </li>
-                <li className="text-xs lg:text-sm leading-none hover:text-brand  text-gray-800 font-medium py-3">
+                <li className="text-xs md:text-sm leading-none hover:text-brand  text-gray-800 font-medium py-3">
                   Domingo:
                   <span className="ml-2 font-normal">08:00 am - 16:00 pm</span>
                 </li>
@@ -76,16 +76,16 @@ export const Footer = () => {
               <ul>
                 <li className="mb-6">
                   <Link href="/contacto">
-                    <a className="text-xs lg:text-sm  font-medium leading-none hover:text-brand  text-gray-800 ">Contacto</a>
+                    <a className="text-xs md:text-sm  font-medium leading-none hover:text-brand  text-gray-800 ">Contacto</a>
                   </Link>
                 </li>
                 <li className="mb-6">
                   <Link href="#">
-                    <a className="text-xs lg:text-sm  font-medium leading-none hover:text-brand  text-gray-800 ">Preguntas Frecuentes</a>
+                    <a className="text-xs md:text-sm  font-medium leading-none hover:text-brand  text-gray-800 ">Preguntas Frecuentes</a>
                   </Link>
                 </li>
                 <li className="mb-6">
-                  <h2 className="text-xs lg:text-sm font-medium text-gray-900 mb-4">RRSS</h2>
+                  <h2 className="text-xs md:text-sm font-medium text-gray-900 mb-4">RRSS</h2>
                   <div className="grid grid-cols-5 gap-2 text-rose-500 ">
 
                     <Link href={`https://www.facebook.com`}>
@@ -148,7 +148,7 @@ export const Footer = () => {
                 </a>
               </Link>
 
-              <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 ">2022 {site.title}. Todos los derechos reservados.</p>
+              <p className="mt-6 text-xs md:text-sm leading-none text-gray-900 ">2022 {site.title}. Todos los derechos reservados.</p>
             </div>
           </div>
         </div>

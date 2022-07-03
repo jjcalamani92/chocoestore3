@@ -136,7 +136,7 @@ export const ProductOverviews: FC<Props> = ({ product }) => {
 						<div className="mb-4">
 							<h2 className="text-sm font-medium text-gray-900">Detalles</h2>
 							<div className="mt-4 space-y-3">
-								<p className="text-xs lg:text-sm text-gray-600">{product.description}</p>
+								<p className="text-xs md:text-sm text-gray-600">{product.description}</p>
 							</div>
 						</div>
 						<div className="mb-4">
