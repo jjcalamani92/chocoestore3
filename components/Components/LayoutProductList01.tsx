@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Category, Featured, IGlasses, IMark, Item, Section } from "../../src/interfaces";
+import { Category, Featured, IHardware, IMark, Item, Section } from "../../src/interfaces";
 import Link from "next/link";
 import axios from "axios";
 import { useRouter } from "next/router";
@@ -7,7 +7,7 @@ import Image from "next/image";
 import Swal from "sweetalert2";
 
 interface Props {
-	products: IGlasses[];
+	products: IHardware[];
 }
 interface LayoutMarkListAdmin {
 	marks: IMark[];
@@ -110,7 +110,7 @@ export const LayoutItemListAdmin: FC<Props> = ({ products }) => {
 						showConfirmButton: false,
 					}),
 				// await axios.put(`${process.env.APIS_URL}/api/site/removecategory/${process.env.API_SITE}`, {category: id})
-				await axios.delete(`${process.env.APIP_URL}/api/glasses/${id}`)
+				await axios.delete(`${process.env.APIP_URL}/api/hardware/${id}`)
 				// router.push(`/admin`)
 				router.reload()
 			}

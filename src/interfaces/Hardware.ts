@@ -1,4 +1,4 @@
-export interface IGlasses {
+export interface IHardware {
 	_id: string;
 	name: string;
 	brand: string;
@@ -17,10 +17,7 @@ export interface IGlasses {
 	site: string;
 	featured: string;
 	
-	glasses: string;
-	form: string;
-	bridge: string;
-	rod: string;
+	color: string;
 }
 export interface IMark {
 	_id: string;

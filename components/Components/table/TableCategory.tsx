@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useRouter } from 'next/router';
 import Link from "next/link";
 import React, { FC, useState } from "react";
-import { Category, IGlasses, Site } from "../../../src/interfaces";
+import { Category, IHardware, Site } from "../../../src/interfaces";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenToSquare, faCircleMinus, faCirclePlus } from '@fortawesome/free-solid-svg-icons';
 import axios from "axios";

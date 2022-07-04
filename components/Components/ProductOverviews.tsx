@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { FC, useContext, useState, } from "react";
 import { UiContext } from "../../src/context";
-import { IGlasses } from "../../src/interfaces";
+import { IHardware } from "../../src/interfaces";
 import { SwiperDetail } from "./Swiper";
 import { useRouter } from 'next/router';
 import { RadioGroup } from '@headlessui/react';
@@ -13,7 +13,7 @@ function classNames(...classes: string[]) {
 }
 
 interface Props {
-	product: IGlasses;
+	product: IHardware;
 }
 
 export const ProductOverviews: FC<Props> = ({ product }) => {

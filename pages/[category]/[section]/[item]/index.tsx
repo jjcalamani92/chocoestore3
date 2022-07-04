@@ -1,6 +1,6 @@
 import React, { FC, useContext } from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
-import { Category, IGlasses, ISeo, Item, Section } from "../../../../src/interfaces";
+import { Category, IHardware, ISeo, Item, Section } from "../../../../src/interfaces";
 import { ITEM, PRODUCTS_BY_ITEM, SBI } from "../../../../src/gql";
 import { Layout } from "../../../../components/Layout";
 import { HeadingPrimary, GridProduct } from "../../../../components/Components";
@@ -8,7 +8,7 @@ import { graphQLClientP, graphQLClientS } from "../../../../src/graphQLClient";
 import { UiContext } from "../../../../src/context";
 
 interface Props {
-  items: IGlasses[]
+  items: IHardware[]
   seo: ISeo
 }
 
@@ -32,9 +32,9 @@ const ItemPage:FC<Props> = ({items, seo}) => {
 
 export const getStaticPaths: GetStaticPaths = async (ctx) => {
   
-      const { glassesAll } = await graphQLClientP.request(ITEM , {site: `${process.env.API_SITE}`})
+      const { hardwareAll } = await graphQLClientP.request(ITEM , {site: `${process.env.API_SITE}`})
   
-      const paths = glassesAll.map((data:IGlasses) => ({
+      const paths = hardwareAll.map((data:IHardware) => ({
         params: data
       }))
   return {
@@ -55,10 +55,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const r = re.items.find((data: { href: string; }) => data.href === `${item}`)
 
 
-  const { glassesByCategoryAndSectionAndItem } = await graphQLClientP.request(PRODUCTS_BY_ITEM, {category: `${category}`, section: `${section}`, item: `${item}`, site: `${process.env.API_SITE}`})
+  const { hardwareByCategoryAndSectionAndItem } = await graphQLClientP.request(PRODUCTS_BY_ITEM, {category: `${category}`, section: `${section}`, item: `${item}`, site: `${process.env.API_SITE}`})
   return {
     props: {
-      items: glassesByCategoryAndSectionAndItem,
+      items: hardwareByCategoryAndSectionAndItem,
       seo: {
         category: {
           name: res.name,

@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import { Category,Section, IGlasses, ISeo, Featured } from "../../src/interfaces";
+import { Category,Section, IHardware, ISeo, Featured } from "../../src/interfaces";
 import React, { FC, useContext } from "react";
 import { PRODUCT_BY_FEATURED, SBF } from "../../src/gql";
 import { Layout } from "../../components/Layout";
@@ -11,7 +11,7 @@ interface Props {
   seo: ISeo
   section: Section
   feature: Featured
-  products: IGlasses[]
+  products: IHardware[]
 }
 
 const FeaturedPage:FC<Props> = ({seo, section, feature, products}) => {
@@ -56,12 +56,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 	}, [])
   const re = pat.find((data: { href: string; }) => data.href === `${featured}`)
 
-  const { glassesByFeatured } = await graphQLClientP.request(PRODUCT_BY_FEATURED, {featured:  `${featured}`, site: `${process.env.API_SITE}`})
+  const { hardwareByFeatured } = await graphQLClientP.request(PRODUCT_BY_FEATURED, {featured:  `${featured}`, site: `${process.env.API_SITE}`})
 
   return {
     props: { 
       feature: re, 
-      products: glassesByFeatured
+      products: hardwareByFeatured
     },
     revalidate: 3
   };

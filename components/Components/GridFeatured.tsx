@@ -2,7 +2,7 @@ import { useRouter } from "next/router"
 import { FC } from "react"
 import { Category, Item, Section, Featured } from "../../src/interfaces"
 import { CardComponent } from "./CardProduct"
-import { IGlasses } from '../../src/interfaces/Glasses';
+import { IHardware } from '../../src/interfaces/Hardware';
 import { CardPages } from "./CardPages";
 
 interface GridProduct {
@@ -11,7 +11,7 @@ interface GridProduct {
   categories?: Category[]
   items?: Item[]
   category?: string
-  product?: IGlasses[]
+  product?: IHardware[]
 }
 
 export const GridFeatured: FC<GridProduct> = ({ sections, category, data, product }) => {

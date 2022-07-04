@@ -202,7 +202,7 @@ export const Form: FC<Props> = ({ product }) => {
         showConfirmButton: false,
         timer: 1500
       })
-      await axios.put(`${process.env.APIP_URL}/api/glasses/${product._id}`, data)
+      await axios.put(`${process.env.APIP_URL}/api/hardware/${product._id}`, data)
       router.replace('/admin')
 
     } else {
@@ -214,7 +214,7 @@ export const Form: FC<Props> = ({ product }) => {
         timer: 1500
       })
       await axios.post(
-        `${process.env.APIP_URL}/api/glasses`, data);
+        `${process.env.APIP_URL}/api/hardware`, data);
       router.replace(`/admin`)
     }
   }

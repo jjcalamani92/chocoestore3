@@ -4,7 +4,7 @@ export const Home = () => {
 		<section className="relative bg-white">
 			<img
 				className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-25 sm:opacity-100"
-				src="https://res.cloudinary.com/dvcyhn0lj/image/upload/v1645194764/glass/home/home-bg-1_ti0s6k.png"
+				src="https://res.cloudinary.com/dvcyhn0lj/image/upload/v1655004538/Ferreteria/category/1200px-Hand_tools_smghhr.jpg"
 				alt="Couple on a bed with a dog"
 			/>
 			<div className="hidden sm:block sm:inset-0 sm:absolute sm:bg-gradient-to-r sm:from-white sm:to-transparent"></div>
@@ -18,7 +18,7 @@ export const Home = () => {
 						</strong>
 					</h1>
 					<p className="max-w-lg mt-4 sm:leading-relaxed sm:text-xl">
-						Optica Online
+						Ferretería Online
 					</p>
 
 					<div className="flex flex-wrap gap-4 mt-8 text-center">

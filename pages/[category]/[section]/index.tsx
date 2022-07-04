@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import { Section, IGlasses, ISeo } from "../../../src/interfaces";
+import { Section, IHardware, ISeo } from "../../../src/interfaces";
 import React, { FC, useContext } from "react";
 import { SECTION, SBI } from "../../../src/gql";
 import { Layout } from "../../../components/Layout";
@@ -30,8 +30,8 @@ const SectionPage:FC<Props> = ({seo, section}) => {
   );
 };
 export const getStaticPaths: GetStaticPaths = async (ctx) => {
-  const { glassesAll } = await graphQLClientP.request(SECTION , {site: `${process.env.API_SITE}`})
-  const paths = glassesAll.map((data:IGlasses) => ({
+  const { hardwareAll } = await graphQLClientP.request(SECTION , {site: `${process.env.API_SITE}`})
+  const paths = hardwareAll.map((data:IHardware) => ({
     params: data
   }))
   return {

@@ -1,5 +1,5 @@
 import { NextPage, GetServerSideProps } from 'next';
-import { Category, IGlasses, Section } from "../../../../../src/interfaces";
+import { Category, IHardware, Section } from "../../../../../src/interfaces";
 import { Layout, LayoutAdmin } from '../../../../../components/Layout';
 import { graphQLClientS } from '../../../../../src/graphQLClient';
 import { SBS } from '../../../../../src/gql/site';

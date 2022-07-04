@@ -17,9 +17,9 @@ export type Product = {
 	client: string;
 	_id?: string;
 	slug: string;
-	//--Glasses--//
-  glasses: string;
-  form: string;
-  bridge: string;
-  rod: string;
+	//--Hardware--//
+  color: string;
+  // form: string;
+  // bridge: string;
+  // rod: string;
 }
