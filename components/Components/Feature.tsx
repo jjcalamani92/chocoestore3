@@ -21,13 +21,13 @@ export const Feature = () => {
             <div className="col-span-2">
               <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 lg:gap-6 gap-6">
                 <Image 
-                src="https://res.cloudinary.com/dvcyhn0lj/image/upload/v1656892878/glass/adaptar_los_cristales_de_tus_gafas_a_otra_montura_zeua10.jpg" 
+                src="https://res.cloudinary.com/dvcyhn0lj/image/upload/v1656901482/Ferreteria/ferreteria_rpmk7a.jpg" 
                 className="w-full" 
                 width={600}
-                height={400}
+                height={600}
                 objectFit='cover'
                 alt="kitchen" />
-                <Image src="https://res.cloudinary.com/dvcyhn0lj/image/upload/v1656892778/glass/gafas-graduadas-mojacar_kxpq5l.jpg" width={600} height={400} objectFit='cover' className="w-full" alt="sitting room" />
+                <Image src="https://res.cloudinary.com/dvcyhn0lj/image/upload/v1656901482/Ferreteria/elektra-oferta-ferreteria-4_qwq0jz.jpg" width={600} height={600} objectFit='cover' className="w-full" alt="sitting room" />
               </div>
             </div>
           </div>
