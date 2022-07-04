@@ -158,11 +158,14 @@ export const Header = () => {
 
 
                 <div className="border-t border-gray-200 py-6 px-4 space-y-6">
-                  {site.pages.map((page) => (
-                    <div key={page.name} className="flow-root">
-                      <a href={page.href} className="-m-2 p-2 block font-medium text-gray-900">
-                        {page.name}
-                      </a>
+                  {site.pages.map((page, i) => (
+                    <div key={i} className="flow-root">
+                      <Link href={page.href}>
+                        <a className="-m-2 p-2 block font-medium text-gray-900">
+                          {page.name}
+                        </a>
+                      </Link>
+
                     </div>
                   ))}
                   <div className="flow-root">
@@ -404,10 +407,12 @@ export const Header = () => {
                                               >
                                                 {section.items.slice(0,4).map((item, i) => (
                                                   <li key={i} className="flex">
-                                                    <a href={`/${category.href}/${section.href}/${item.href}`} className="hover:text-gray-800 capitalize">
+                                                    <Link href={`/${category.href}/${section.href}/${item.href}`}>
+                                                      <a  className="hover:text-gray-800 capitalize">
 
-                                                      {item.name}
-                                                    </a>
+                                                        {item.name}
+                                                      </a>
+                                                    </Link>
                                                   </li>
                                                 ))}
                                                 {
@@ -442,13 +447,15 @@ export const Header = () => {
                   }
 
                   {site.pages.map((page, i) => (
+                    <Link key={i} href={page.href}>
+                    
                     <a
-                      key={i}
-                      href={page.href}
+                      
                       className="flex items-center text-xs md:text-sm font-medium text-gray-700 hover:text-gray-800 capitalize"
                     >
                       {page.name}
                     </a>
+                    </Link>
                   ))}
                   {
                     isLoggedIn && user?.role === 'ADMIN_ROL' && p[0] === 'admin' && (
