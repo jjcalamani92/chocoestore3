@@ -17,10 +17,7 @@ export const PRODUCT_FRAGMENT = gql`
     tags
     featured
 
-    hardware
-		form
-		bridge
-		rod
+    color
   }
 `;
 
