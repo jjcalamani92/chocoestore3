@@ -44,17 +44,17 @@
 } */
 .swiper-button-prev {
 	/* left: 30; */
-	color: rose !important;
+	color: orange !important;
 }
 .swiper-button-next {
 	/* left: 30; */
-	color: rose !important;
+	color: orange !important;
 }
 .swiper-pagination-bullet {
-	background: rose !important;
+	background: orange !important;
 }
 .swiper-pagination-bullet-active {
-	background: rose !important;
+	background: orange !important;
 }
 
 .sk-chase {

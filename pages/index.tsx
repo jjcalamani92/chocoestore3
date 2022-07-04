@@ -14,7 +14,7 @@ const Index: NextPage = () => {
 			pageDescription={site.description}
 			imageFullUrl={site.logo}
 		>
-			{/* <Text className="font-extrabold text-rose-600 sm:block">Hola Jesus</Text> */}
+			{/* <Text className="font-extrabold text-orange-600 sm:block">Hola Jesus</Text> */}
 			<Home />
 		</Layout>
 	);

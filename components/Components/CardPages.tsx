@@ -113,7 +113,7 @@ export const CardPages: FC<CardPages> = ({ name, imageSrc, imageAlt, description
       {
             p[0] === 'admin'
               ?
-              <div onClick={() => onDeleteData(`${id}`)}  className="mt-2 transition text-center duration-150 ease-in-out hover:bg-rose-600 focus:outline-none border bg-white border-1 border-rose-500 rounded px-8 py-2 text-xs md:text-sm text-rose-600  hover:text-white hover:border-0">Eliminar</div>
+              <div onClick={() => onDeleteData(`${id}`)}  className="mt-2 transition text-center duration-150 ease-in-out hover:bg-orange-600 focus:outline-none border bg-white border-1 border-orange-500 rounded px-8 py-2 text-xs md:text-sm text-orange-600  hover:text-white hover:border-0">Eliminar</div>
 							
               : null
           }

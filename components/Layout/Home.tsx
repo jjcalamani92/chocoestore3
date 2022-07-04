@@ -13,7 +13,7 @@ export const Home = () => {
 				<div className="max-w-xl text-center sm:text-left">
 					<h1 className="text-3xl font-extrabold sm:text-5xl">
 						La calidad esta{' '}
-						<strong className="font-extrabold text-rose-600 sm:block">
+						<strong className="font-extrabold text-orange-600 sm:block">
 							Disponible
 						</strong>
 					</h1>
@@ -23,14 +23,14 @@ export const Home = () => {
 
 					<div className="flex flex-wrap gap-4 mt-8 text-center">
 						<a
-							className="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-rose-500 sm:w-auto active:bg-rose-500 hover:bg-rose-600 focus:outline-none focus:ring"
+							className="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-orange-500 sm:w-auto active:bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring"
 							href=""
 						>
 							Ver Productos
 						</a>
 
 						<a
-							className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-rose-500 sm:w-auto hover:text-rose-600 active:text-rose-500 focus:outline-none focus:ring"
+							className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-orange-500 sm:w-auto hover:text-orange-600 active:text-orange-500 focus:outline-none focus:ring"
 							href=""
 						>
 							Descuentos

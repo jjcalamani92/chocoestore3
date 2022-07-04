@@ -64,7 +64,7 @@ export const CardComponent: FC<CardComponent> = ({ name, imageSrc, imageAlt, des
             {
               oldPrice
               ?
-              <span className="absolute left-0 top-2 text-xs md:text-sm  text-rose-500 bg-gray-100 p-1"> -{`${Math.floor((Number(price)-Number(oldPrice))*100/Number(price))}`}%</span>
+              <span className="absolute left-0 top-2 text-xs md:text-sm  text-orange-500 bg-gray-100 p-1"> -{`${Math.floor((Number(price)-Number(oldPrice))*100/Number(price))}`}%</span>
               : null
             }
             {
@@ -72,7 +72,7 @@ export const CardComponent: FC<CardComponent> = ({ name, imageSrc, imageAlt, des
               ? 
               <>
                 <span className="absolute right-0 top-2  ">
-                  <p className="hidden lg:block text-xs md:text-sm bg-rose-500 text-white p-1 font-semibold"> en oferta </p>
+                  <p className="hidden lg:block text-xs md:text-sm bg-orange-500 text-white p-1 font-semibold"> en oferta </p>
                   <div className="lg:hidden">
                     <Image
                       src={"https://res.cloudinary.com/dvcyhn0lj/image/upload/v1656784000/etiqueta_vlolbd.png"}
@@ -117,7 +117,7 @@ export const CardComponent: FC<CardComponent> = ({ name, imageSrc, imageAlt, des
       {
             p[0] === 'admin'
               ?
-              <div onClick={() => onDeleteData(`${id}`)}  className="mt-2 transition text-center duration-150 ease-in-out hover:bg-rose-600 focus:outline-none border bg-white border-1 border-rose-500 rounded px-8 py-2 text-xs md:text-sm text-rose-600  hover:text-white hover:border-0">Eliminar</div>
+              <div onClick={() => onDeleteData(`${id}`)}  className="mt-2 transition text-center duration-150 ease-in-out hover:bg-orange-600 focus:outline-none border bg-white border-1 border-orange-500 rounded px-8 py-2 text-xs md:text-sm text-orange-600  hover:text-white hover:border-0">Eliminar</div>
 							
               : null
           }
